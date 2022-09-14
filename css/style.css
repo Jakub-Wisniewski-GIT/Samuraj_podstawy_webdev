@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  margin-block: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  min-width: 280px;
+  color: white;
+  background-color: #29a6dc;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.starter {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.starter p {
+  font-size: 40px;
+}
+.starter h1 {
+  margin: 15px 0 0;
+  font-size: 20px;
+}
+.starter h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+header button {
+  line-height: 32px;
+  margin-top: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 2px solid white;
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+header img {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+@media (orientation: landscape) {
+  .starter {
+    top: 25%;
+    left: 5%;
+    right: 50%;
+    text-align: left;
+  }
+
+  header img {
+    height: 90%;
+  }
+}
+@media (orientation: portrait) and (min-width: 360px) {
+  header img {
+    right: -5%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .starter p {
+    font-size: 60px;
+  }
+  .starter h1 {
+    font-size: 30px;
+  }
+  .starter h2 {
+    font-size: 30px;
+  }
+  header button {
+    line-height: 48px;
+
+    font-size: 24px;
+  }
+}
+@media (orientation: landscape) and (min-width: 768px) {
+  .starter {
+    top: 15%;
+  }
+  .starter p {
+    font-size: 60px;
+  }
+  .starter h1 {
+    font-size: 30px;
+  }
+  .starter h2 {
+    font-size: 30px;
+  }
+  header button {
+    line-height: 48px;
+
+    font-size: 24px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1200px) {
+  .starter {
+    top: 30%;
+  }
+  .starter p {
+    font-size: 80px;
+  }
+  .starter h1 {
+    font-size: 40px;
+  }
+  .starter h2 {
+    font-size: 40px;
+  }
+  header button {
+    line-height: 56px;
+
+    font-size: 28px;
+  }
+}
+@media (orientation: landscape) and (min-width: 1024px) {
+  header button {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  header button:hover {
+    color: #29a6dc;
+    background-color: white;
+  }
+}
+/* Section.features */
+
+.features {
+  margin-top: 50px;
+  padding: 5%;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.features h1 {
+  font-size: 24px;
+  line-height: 150%;
+}
+.phototitle {
+  font-size: 18px;
+  line-height: 120%;
+}
+.feature p {
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  text-transform: initial;
+  font-weight: 300;
+}
+.feature img {
+  width: 100%;
+  margin: 5px 0;
+  max-width: 375px;
+}
+section {
+  min-height: 30vh;
+}
+@media (min-width: 360px) {
+  .features h1 {
+    font-size: 32px;
+  }
+  .phototitle {
+    font-size: 24px;
+  }
+  .feature p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .features h1 {
+    font-size: 40px;
+  }
+  .phototitle {
+    font-size: 28px;
+  }
+  .feature p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .feature {
+    float: left;
+    width: 33%;
+    padding: 40px;
+    max-width: 1600px;
+  }
+  .features h1 {
+    font-size: 40px;
+  }
+  .phototitle {
+    font-size: 28px;
+  }
+  .feature p {
+    font-size: 20px;
+  }
+}
+
+/* Sekcja portfolio */
+
+.portfolio {
+  padding-bottom: 30px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+.portfolio h1 {
+  margin: 0 10%;
+  padding: 50px 0;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.portfolio .about {
+  margin-bottom: 30px;
+  padding: 10px 20px 20px 0px;
+  font-family: "Saira", sans-serif;
+}
+
+.portfolio h2 {
+  padding: 15px 0;
+  border-bottom: 2px solid;
+  font-size: 18px;
+  text-indent: 20px;
+}
+.portfolio p {
+  padding: 15px 0;
+  font-size: 12px;
+  text-transform: none;
+  padding: 10px 20px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+.portfolio .project:nth-child(odd) {
+  background-color: orangered;
+}
+.portfolio .project:nth-child(even) {
+  background-color: royalblue;
+}
+@media (orientation: landscape) {
+  .about,
+  .web {
+    float: left;
+    width: 50%;
+  }
+  .portfolio img {
+    display: block;
+  }
+  .portfolio .project:nth-child(even) .web {
+    float: right;
+  }
+  .project {
+    margin-bottom: 30px;
+  }
+}
+
+/* Sekcja motto */
+
+.motto {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url(/img/motto.jpg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.motto h1 {
+  margin: 0 10%;
+  padding: 50px 0;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.motto p {
+  padding: 0 5%;
+  font-size: 18px;
+  font-family: "Saira", sans-serif;
+}
+.motto .author {
+  padding: 20px 0 100px 0;
+  font-size: 11px;
+}
+.bg {
+  background-color: rgb(0, 100, 225, 0.5);
+}
+@media (orientation: landscape) {
+  .motto h1 {
+    margin: 0 10%;
+    padding: 160px 0;
+    font-size: 80px;
+  }
+  .motto p {
+    padding: 0 5%;
+    font-size: 48px;
+  }
+  .motto .author {
+    padding: 40px 0 150px 0;
+    font-size: 24px;
+  }
+}
+
+/* Sekcja hobby */
+.hobby {
+  max-width: 1680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hobby div {
+  height: 25vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hobby h1 {
+  margin: 0 2%;
+  padding: 30px 0;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.divphoto1 {
+  background-image: url(/img/hobby1.jpg);
+}
+.divphoto2 {
+  background-image: url(/img/hobby2.jpg);
+}
+.divphoto3 {
+  background-image: url(/img/hobby3.jpg);
+}
+.divphoto4 {
+  background-image: url(/img/hobby4.jpg);
+}
+.hobby p {
+  font-size: 30px;
+  color: white;
+  font-family: "Saira", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 533px) {
+  .hobby div {
+    float: left;
+    width: 50%;
+    height: 40vh;
+  }
+}
+@media (min-width: 768px) {
+  .hobby h1 {
+    margin: 0 2%;
+    padding: 80px 0;
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .hobby p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .hobby p {
+    padding: 0;
+    font-size: 40px;
+    line-height: 40vh;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .hobby div:hover p {
+    opacity: 1;
+  }
+  .hobby div {
+    height: 40vh;
+    background-size: 100%;
+    transition: 0.5s;
+  }
+
+  .hobby div:hover {
+    background-size: 150%;
+  }
+}
+
+/* Sekcja kontakt */
+
+.contact {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: white;
+  background-color: black;
+  font-family: "Saira", sans-serif;
+}
+.wrap {
+  padding: 30px 0;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  margin: 0 2%;
+  padding: 30px 0;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.contact input,
+.contact button,
+.contact textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+.contact input {
+  margin-top: 10px;
+  height: 36px;
+}
+.contact textarea {
+  height: 120px;
+}
+.contact button {
+  font-size: 14px;
+  line-height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  text-transform: uppercase;
+}
+
+.contact .socials {
+  font-size: 0;
+  padding: 20px 0;
+}
+.contact .social {
+  padding: 0 0 40px;
+}
+.contact span {
+  float: left;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 72px;
+  font-family: "Saira", sans-serif;
+}
+.contact img {
+  float: left;
+}
+@media (min-width: 568px) {
+  .contact .social {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact form,
+  .contact .socials {
+    float: left;
+    width: 50%;
+    padding: 0 50px;
+  }
+  .contact .social {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contact h1 {
+    font-size: 60px;
+  }
+  .contact input,
+  .contact button,
+  .contact textarea {
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  .contact input {
+    margin-top: 10px;
+    height: 60px;
+  }
+  .contact textarea {
+    margin-top: 10px;
+    height: 200px;
+  }
+  .contact button {
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .contact button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* Sekcja footer */
+footer {
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  background-color: #29a6dc;
+  font-family: "Saira", sans-serif;
+}
